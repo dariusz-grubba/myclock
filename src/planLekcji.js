@@ -32,9 +32,9 @@ export function newFunction_1() {
     poniedzialek[13] = "13. Matematyka (s.207)";
 
   const wtorek = [];
-    wtorek[1] = "";
-    wtorek[2] = "";
-    wtorek[3] = "";
+    wtorek[1] = "1. --";
+    wtorek[2] = "2. --";
+    wtorek[3] = "3. --";
     wtorek[4] = "4. Chemia (s.102)";
     wtorek[5] = "5. Matematyka (s.207)";
     wtorek[6] = "6. Język angielski (s.103)";
@@ -54,7 +54,7 @@ export function newFunction_1() {
     sroda[5] = "5. Wychowanie fizyczne (s.sg4)";
     sroda[6] = "6. Wychowanie fizyczne (s.sg4)";
     sroda[7] = "7. Wychowanie fizyczne (s.sg4)";
-    sroda[8] = "";
+    sroda[8] = "8. --";
     sroda[9] = "";
     sroda[10] = "";
     sroda[11] = "";
@@ -70,7 +70,7 @@ export function newFunction_1() {
     czwartek[6] = "6. Język polski (s.219)";
     czwartek[7] = "7. Religia (s.121)";
     czwartek[8] = "8. Testowanie aplikacji (s.320)";
-    czwartek[9] = "";
+    czwartek[9] = "9. --";
     czwartek[10] = "";
     czwartek[11] = "";
     czwartek[12] = "";
@@ -85,21 +85,21 @@ export function newFunction_1() {
     piatek[6] = "6. Język polski (s.219)";
     piatek[7] = "7. Wiedza o społeczeństwie (s.201)";
     piatek[8] = "8. Matematyka (s.207)";
-    piatek[9] = "";
+    piatek[9] = "9. --";
     piatek[10] = "";
     piatek[11] = "";
     piatek[12] = "";
     piatek[13] = "";
 
   const sobota = [];
-    sobota[1] = "";
+    sobota[1] = "1. --";
     sobota[2] = "2. Matematyka (s.207)";
     sobota[3] = "3. Programowanie aplikacji (s.108)";
     sobota[4] = "4. Język angielski (s.103)";
     sobota[5] = "5. Pracownia programowania aplikacji (s.305)";
     sobota[6] = "6. Pracownia programowania aplikacji (s.305)";
     sobota[7] = "7. Godzina wychowawcza (s.219)";
-    sobota[8] = "";
+    sobota[8] = "8. --";
     sobota[9] = "";
     sobota[10] = "";
     sobota[11] = "";
