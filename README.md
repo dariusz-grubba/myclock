@@ -1,6 +1,6 @@
 # MyClock - Szkolny Zegarek
 
-### Funkcjonalość 
+### Funkcje 
 
 - Wyświetlanie aktualnego czasu i godziny;
 - Odliczanie czasu do następnego dzwonka;
