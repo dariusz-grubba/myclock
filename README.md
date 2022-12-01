@@ -8,6 +8,9 @@ Aplikacja ta zawiera następujące funckje:
 
 ## Instalacja
 
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![alt text](https://github.com/dariusz-grubba/myclock/blob/013b001a82cd7769e8d32d76f96e154b90ea2de4/public/logo.png)
+
 Projekt ten stworzony został przy pomocy **React.js**. Aby go zainstalować należy użyć następujących komend w terminalu:
 
 ### `npm install`
