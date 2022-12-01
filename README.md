@@ -85,6 +85,6 @@ Uruchamia tryb testowy w interaktywnym trybie obserwacyjnym.
 
 Buduje aplikację do produkcji w folderze `build`.
 
-`$  npm run build``
+`$  npm run build`
 
 Więcej informacji o [komplilacji kodu](https://facebook.github.io/create-react-app/docs/deployment)
