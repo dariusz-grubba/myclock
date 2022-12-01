@@ -19,15 +19,15 @@ Projekt został stworzony przy użyciu frameworku **React.js**. Umożliwiło to 
 #### Aktualna godzina i data
 
 ```javascript
-import { useEffect, useState } from "react";  //**zaimportowanie wbudowanych w Reacts.js bibliotek**
+import { useEffect, useState } from "react";  //zaimportowanie wbudowanych w Reacts.js bibliotek
 function Zegarek() {
     const [clockState, setClockState] = useState();
-    useEffect(() => { //**komponent useEffect() renderuje element na stronie**
-        setInterval(() => { //**setInterval wywołuje funkcję w określonych, regularnych odstępach czasowych**
+    useEffect(() => { //komponent useEffect() renderuje element na stronie
+        setInterval(() => { //setInterval wywołuje funkcję w określonych, regularnych odstępach czasowych
             const date = new Date();
-            setClockState(date.toLocaleTimeString('pl-PL')); //**wyświetlenie zegarka w formacie 24 godzinnym**
+            setClockState(date.toLocaleTimeString('pl-PL')); //wyświetlenie zegarka w formacie 24 godzinnym
         }, 1000); }, []);
-    return document.getElementById('tykajacyZegar').innerHTML = clockState //**przekazanie rezultatu funkcji do diva**
+    return document.getElementById('tykajacyZegar').innerHTML = clockState //przekazanie rezultatu funkcji do diva
 }
 ```
 #### Do następnego dzwonka
