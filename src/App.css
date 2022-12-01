@@ -1,77 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@700&display=swap');
-body, html, #root {
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
-    /* overscroll-behavior-y: none; */
-    background-color: #000000;
-    color: black;
-    /* overflow: hidden; */
-  }
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Poppins:wght@700&display=swap");
+body,
+html,
+#root {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  /* overscroll-behavior-y: none; */
+  background-color: #000000;
+  color: black;
+  /* overflow: hidden; */
+}
 
-  *, *::before, *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    /* defualt app transition */
-    transition: all 0.8s ease-in-out;
-    /* font-family: "Josefin Sans", sans-serif; */
-  }
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* defualt app transition */
+  transition: all 0.8s ease-in-out;
+  /* font-family: "Josefin Sans", sans-serif; */
+}
 .App {
   text-align: center;
 }
 .App-link {
   color: #61dafb;
 }
-#root{
+#root {
   display: none;
 }
-#time{
+#time {
   text-align: center;
   font-size: 55px;
   color: white;
   margin: 20px;
 }
-#tytul{
+#tytul {
   text-align: center;
   font-size: 55px;
   margin-top: 20px;
   color: white;
-  background: -webkit-linear-gradient(#AD1DEB, #5b60ff);
+  background: -webkit-linear-gradient(#ad1deb, #5b60ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.1em;
 }
-#tykajacyZegar{
-
-  font-size: 55px; 
+#tykajacyZegar {
+  font-size: 55px;
   margin-top: 60px;
   margin-bottom: 60px;
   text-align: center;
   margin-top: 20px;
   color: white;
-
-
 }
-#wrap1{
+#wrap1 {
   margin-top: 40px;
   margin-left: 10%;
   margin-right: 10%;
-  border-width:3px; 
-  border-style:solid; 
-  border-color:#1c1c1c;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1c1c1c;
   border-radius: 15px;
   background-color: #1c1c1c;
 }
-#wrap2{
+#wrap2 {
   margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
-  border-width:3px; 
-  border-style:solid; 
-  border-color:#1c1c1c;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1c1c1c;
   border-radius: 15px;
   background-color: #1c1c1c;
   /* box-shadow: 0 0 5px 2px #cf3a89,
@@ -79,44 +79,75 @@ body, html, #root {
               0 0 30px 2px #ff1493,
               0 0 30px 2px #ff1493; */
 }
-#wrap3{
+#wrap3 {
   margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
-  border-width:3px; 
-  border-style:solid; 
-  border-color:#1c1c1c;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1c1c1c;
   border-radius: 15px;
   background-color: #1c1c1c;
 }
-#podTytul{
+@media (min-width: 500px) {
+  #wrap1,
+  #wrap2,
+  #wrap3 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (min-width: 830px) {
+  #wrap1,
+  #wrap2,
+  #wrap3 {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media (min-width: 1300px) {
+  #wrap1,
+  #wrap2,
+  #wrap3 {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media (min-width: 1401px) {
+  #wrap1,
+  #wrap2,
+  #wrap3 {
+    margin-left: 38%;
+    margin-right: 38%;
+  }
+}
+#podTytul {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
   color: white;
 }
-#wyswietlLekcje{
+#wyswietlLekcje {
   text-align: center;
   font-size: 25px;
   margin: 30px;
   color: white;
 }
-#aktualnaData{
+#aktualnaData {
   text-align: center;
   font-size: 20px;
   color: white;
   margin-top: -60px;
   margin-bottom: 20px;
 }
-#ikonkaZegarka{
+#ikonkaZegarka {
   color: rgb(176, 176, 176);
   font-weight: 600;
   text-align: center;
   margin-top: 10px;
   margin-bottom: -15px;
-
 }
-#autor{
+#autor {
   color: white;
   font-size: 25px;
   margin-top: 40px;

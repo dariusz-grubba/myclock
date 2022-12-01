@@ -2,61 +2,48 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <script src="https://kit.fontawesome.com/3ea95675e3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3ea95675e3.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="icon" href="%PUBLIC_URL%/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
-      name="description"
-      content="Zegarek"
+      name="viewport"
+      content="width=device-width, initial-scale=1,  maximum-scale=1"
     />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Zegarek" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>Zegarek</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="app">
-    <div id="tytul"></div>
-    <div id="podTytul"></div>
-    <div id="wrap1">
-      <div id="ikonkaZegarka"><i class="fa-regular fa-clock fa-1x"></i>   Aktualna godzina i data</div>
-      <div id="tykajacyZegar"></div>
-      <div id="aktualnaData"></div>
+    <script>Zegarek()</script>
+    <noscript>Włącz Javascript, aby uruchomić tę aplikację</noscript>
+    <div id="app">
+      <div id="tytul"></div>
+      <div id="podTytul"></div>
+      <div id="wrap1">
+        <div id="ikonkaZegarka">
+          <i class="fa-regular fa-clock fa-1x"></i>  Aktualna godzina i data
+        </div>
+        <div id="tykajacyZegar"></div>
+        <div id="aktualnaData"></div>
+      </div>
+      <div id="root"></div>
+      <div id="wrap2">
+        <div id="ikonkaZegarka">
+          <i class="fa-regular fa-bell"></i>  Do następnego dzwonka
+        </div>
+        <div id="time"></div>
+      </div>
+      <div id="wrap3">
+        <div id="ikonkaZegarka">
+          <i class="fa-regular fa-calendar"></i>  Następna lekcja
+        </div>
+        <div id="wyswietlLekcje"></div>
+      </div>
+      <div id="autor"></div>
     </div>
-    <div id="root"></div>
-    <div id="wrap2">
-      <div id="ikonkaZegarka"><i class="fa-regular fa-bell"></i>   Do następnego dzwonka</div>
-      <div id='time'></div>
-    </div>
-    <div id="wrap3">
-      <div id="ikonkaZegarka"><i class="fa-regular fa-calendar"></i>   Następna lekcja</div>
-      <div id='wyswietlLekcje'></div>
-    </div>
-    <div id="autor"></div>
-  </div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
