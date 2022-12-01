@@ -70,7 +70,7 @@ export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wto
 ```
 # Instalacja
 
-Aby zainstalować i postawić na localhost **Szkolny Zegarek** należy użyć zainstalować  **Node.js** i użyć następujących komend w terminalu:
+Aby zainstalować i postawić na localhost **Szkolny Zegarek** należy zainstalować  **Node.js** i użyć następujących komend w terminalu:
 
 `$ npm install`
 
@@ -83,7 +83,7 @@ Uruchamia tryb testowy w interaktywnym trybie obserwacyjnym.
 
 `$  npm test`
 
-Buduje aplikację do produkcji do folderu `build`.
+Buduje aplikację do produkcji w folderze `build`.
 
 `$  npm run build``
 
