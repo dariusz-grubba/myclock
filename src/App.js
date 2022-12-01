@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Zegarek from "./components/Zegar";
 import { nastepnaLekcja } from "./components/nastepnaLekcja";
-import { wszystkieDzwonki } from "package-react";
+import { wszystkieDzwonki } from "./package-react";
 import { planLekcji } from "./planLekcji";
 import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
 
