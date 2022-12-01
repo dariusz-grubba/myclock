@@ -1,4 +1,4 @@
-export function newFunction_1() {
+export function planLekcji() {
   const dzwonki = [
     "7:10", "7:55",
     "8:00", "8:45",
