@@ -16,7 +16,7 @@ Projekt został stworzony przy użyciu frameworku **React.js**. Umożliwiło to 
 
 ### Moduły
 
-####Aktualna godzina i data
+#### Aktualna godzina i data
 
 ```javascript
 import { useEffect, useState } from "react"; 
