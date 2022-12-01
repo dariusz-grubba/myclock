@@ -57,7 +57,6 @@ Wypisuje każdą kolejną lekcję **n** (z przedziału 1-13) dopasowaną do aktu
 ```javascript
 export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wtorek, sroda, czwartek, piatek, sobota) {
   if ((godzinaLekcyjna[n])) {
-
     switch (dzienTygodnia.getDay()) {
       case 1: document.getElementById('wyswietlLekcje').innerHTML = poniedzialek[n]; break;
       case 2: document.getElementById('wyswietlLekcje').innerHTML = wtorek[n]; break;
@@ -69,3 +68,23 @@ export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wto
     }
   } 
 ```
+# Instalacja
+
+Aby zainstalować i postawić na localhost **Szkolny Zegarek** należy użyć zainstalować  **Node.js** i użyć następujących komend w terminalu:
+
+`$ npm install`
+
+Otwiera aplikację w trybie deweloperskim.
+Przeście do [http://localhost:3000](http://localhost:3000) spowoduje włączenie aplikacji w przeglądarce na lokalnym serwerze.
+
+`$  npm start`
+
+Uruchamia tryb testowy w interaktywnym trybie obserwacyjnym.
+
+`$  npm test`
+
+Buduje aplikację do produkcji do folderu `build`.
+
+`$  npm run build``
+
+Więcej informacji o [komplilacji kodu](https://facebook.github.io/create-react-app/docs/deployment)
