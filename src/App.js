@@ -4,6 +4,7 @@ import Zegarek from "./components/Zegar";
 import { nastepnaLekcja } from "./components/nastepnaLekcja";
 import { wszystkieDzwonki } from "./package-react";
 import { planLekcji } from "./planLekcji";
+import { doSwiat } from "./components/doSwiat";
 import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
 
 (function () {

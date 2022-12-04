@@ -23,6 +23,9 @@ html,
 .App-link {
   color: #61dafb;
 }
+/* #scroll-area{
+  overflow: auto;
+} */
 #root {
   display: none;
 }
@@ -31,6 +34,8 @@ html,
   font-size: 55px;
   color: white;
   margin: 20px;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
 #tytul {
   text-align: center;
@@ -52,7 +57,7 @@ html,
   color: white;
 }
 #wrap1 {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
@@ -62,7 +67,7 @@ html,
   background-color: #1c1c1c;
 }
 #wrap2 {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
@@ -76,7 +81,7 @@ html,
               0 0 30px 2px #ff1493; */
 }
 #wrap3 {
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
@@ -85,10 +90,25 @@ html,
   border-radius: 15px;
   background-color: #1c1c1c;
 }
+#wrap4 {
+  margin-top: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #1c1c1c;
+  border-radius: 15px;
+  background-color: #1c1c1c;
+    /* box-shadow: 0 0 5px 2px #ffffff,
+              0 0 5px 2px #ffffff,
+              0 0 10px 2px #ffffff,
+              0 0 20px 2px #ffffff; */
+}
 @media (min-width: 500px) {
   #wrap1,
   #wrap2,
-  #wrap3 {
+  #wrap3,
+  #wrap4 {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -96,7 +116,8 @@ html,
 @media (min-width: 830px) {
   #wrap1,
   #wrap2,
-  #wrap3 {
+  #wrap3,
+  #wrap4 {
     margin-left: 30%;
     margin-right: 30%;
   }
@@ -104,7 +125,8 @@ html,
 @media (min-width: 1300px) {
   #wrap1,
   #wrap2,
-  #wrap3 {
+  #wrap3,
+  #wrap4 {
     margin-left: 30%;
     margin-right: 30%;
   }
@@ -112,7 +134,8 @@ html,
 @media (min-width: 1401px) {
   #wrap1,
   #wrap2,
-  #wrap3 {
+  #wrap3,
+  #wrap4 {
     margin-left: 38%;
     margin-right: 38%;
   }
@@ -128,6 +151,16 @@ html,
   font-size: 25px;
   margin: 30px;
   color: white;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+#doSwiatPozostalo{
+  text-align: center;
+  font-size: 25px;
+  margin: 30px;
+  color: white;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 #aktualnaData {
   text-align: center;
@@ -146,6 +179,7 @@ html,
 #autor {
   color: white;
   font-size: 25px;
-  margin-top: 40px;
+  margin-top: 20px;
+  /* margin-bottom: 30px; */
   text-align: center;
 }
