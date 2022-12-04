@@ -1,5 +1,5 @@
 function odliczajDoSwiat() {
-		var czasKoncowy = new Date("24 December 2022 00:00:01 GMT+01:00");			
+		var czasKoncowy = new Date("24 December 2022 00:00:00 GMT+01:00");			
         czasKoncowy = (Date.parse(czasKoncowy) / 1000);
             var wyswietlSekcjeSwieta = document.getElementById("wrap4");
 			var teraz = new Date();
