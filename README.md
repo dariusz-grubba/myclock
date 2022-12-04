@@ -6,7 +6,7 @@
 - Odliczanie czasu do następnego dzwonka;
 - Podawanie następnej lekcji z planu lekcji;
 - Informowanie o zakończeniu lekcji;
-- (aktualizacja 04.12.2022) Odliczanie do świąt Bożego Narodzenia 🎁
+- (***aktualizacja 04.12.2022***) Odliczanie do świąt Bożego Narodzenia 🎁
 
 # [Link do aplikacji](https://myclock-three.vercel.app/ "Link do aplikacji")
 <!-- ![szkolny_zegarek](https://github.com/dariusz-grubba/myclock/blob/013b001a82cd7769e8d32d76f96e154b90ea2de4/public/logo.png) -->
