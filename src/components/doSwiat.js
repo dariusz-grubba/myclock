@@ -1,4 +1,4 @@
-function makeTimer() {
+function odliczajDoSwiat() {
 		var czasKoncowy = new Date("24 December 2022 00:00:01 GMT+01:00");			
         czasKoncowy = (Date.parse(czasKoncowy) / 1000);
             var wyswietlSekcjeSwieta = document.getElementById("wrap4");
@@ -27,4 +27,4 @@ function makeTimer() {
             }
 	}
 
-	setInterval(function() { makeTimer(); }, 1000);
+	setInterval(function() { odliczajDoSwiat(); }, 1000);

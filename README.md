@@ -5,7 +5,8 @@
 - Wyświetlanie aktualnego czasu i godziny;
 - Odliczanie czasu do następnego dzwonka;
 - Podawanie następnej lekcji z planu lekcji;
-- Informowanie o zakończeniu lekcji
+- Informowanie o zakończeniu lekcji;
+- (aktualizacja 04.12.2022) Odliczanie do świąt Bożego Narodzenia 🎁
 
 # [Link do aplikacji](https://myclock-three.vercel.app/ "Link do aplikacji")
 <!-- ![szkolny_zegarek](https://github.com/dariusz-grubba/myclock/blob/013b001a82cd7769e8d32d76f96e154b90ea2de4/public/logo.png) -->
@@ -53,7 +54,7 @@ function doDzwonkaPozostalo({ hoursMinSecs }) { //funkcja przyjmuje argument w f
         return () => clearInterval(timerId); //resetuje zegar
 ```
 #### - Następna lekcja
-Wypisuje każdą kolejną lekcję **n** (z przedziału 1-13) dopasowaną do aktualnego dnia **n** (poniedziałek-sobota).
+Wypisuje kolejną lekcję **n** (z przedziału 1-13) dopasowaną do aktualnego dnia **n** (poniedziałek-sobota).
 ```javascript
 export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wtorek, sroda, czwartek, piatek, sobota) {
   if ((godzinaLekcyjna[n])) {
@@ -70,7 +71,7 @@ export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wto
 ```
 # Instalacja
 
-Aby zainstalować i postawić na localhost **Szkolny Zegarek** należy zainstalować  **Node.js** i użyć następujących komend w terminalu:
+Aby zainstalować i uruchomić na localhost **Szkolny Zegarek** należy zainstalować  **Node.js** i użyć następujących komend w terminalu:
 
 `$ npm install`
 
