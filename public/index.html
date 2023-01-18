@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <script
@@ -11,11 +11,65 @@
       name="viewport"
       content="width=device-width, initial-scale=1,  maximum-scale=1"
     />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Zegarek" />
+    <meta name="theme-color" content="#171717" />
+    <meta name="description" content="Clock App" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <title>Zegarek</title>
+
+    <link
+      href="splashscreens/iphone5_splash.png"
+      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/iphone6_splash.png"
+      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/iphoneplus_splash.png"
+      media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/iphonex_splash.png"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/iphonexr_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/iphonexsmax_splash.png"
+      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/ipad_splash.png"
+      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/ipadpro1_splash.png"
+      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/ipadpro3_splash.png"
+      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+    <link
+      href="splashscreens/ipadpro2_splash.png"
+      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title>MyClock</title>
   </head>
   <body>
     <noscript>Włącz Javascript, aby uruchomić tę aplikację</noscript>
@@ -23,36 +77,34 @@
       <div id="tytul"></div>
       <div id="podTytul"></div>
       <div id="scroll-area">
-      <div id="wrap1">
-        <div id="ikonkaZegarka">
-          <i class="fa-regular fa-clock fa-1x"></i>  Aktualna godzina i data
+        <div id="wrap1">
+          <div id="ikonkaZegarka">
+            <i class="fa-regular fa-clock fa-1x"></i>&nbsp&nbspTime and date
+          </div>
+          <div id="tykajacyZegar"></div>
+          <div id="aktualnaData"></div>
         </div>
-        <div id="tykajacyZegar"></div>
-        <div id="aktualnaData"></div>
-      </div>
-      <div id="root"></div>
-      <div id="wrap2">
-        <div id="ikonkaZegarka">
-          <i class="fa-regular fa-bell"></i>  Do następnego dzwonka
+        <div id="root"></div>
+        <div id="wrap2">
+          <div id="ikonkaZegarka">
+            <i class="fa-regular fa-bell"></i>&nbsp&nbspThe bell rings in
+          </div>
+          <div id="time"></div>
         </div>
-        <div id="time"></div>
-      </div>
-      <div id="wrap3">
-        <div id="ikonkaZegarka">
-          <i class="fa-regular fa-calendar"></i>  Następna lekcja
+        <div id="wrap3">
+          <div id="ikonkaZegarka">
+            <i class="fa-regular fa-calendar"></i>&nbsp&nbspThe next lesson
+          </div>
+          <div id="wyswietlLekcje"></div>
         </div>
-        <div id="wyswietlLekcje"></div>
-      </div>
-      <div id="wrap4">
-        <div id="ikonkaZegarka">
-          <i class="fa-solid fa-gift"></i>  Do świąt pozostało
+        <div id="wrap4">
+          <div id="ikonkaZegarka">
+            <i class="fa-solid fa-seedling"></i>&nbsp&nbspSpring break begins in
+          </div>
+          <div id="doSwiatPozostalo"></div>
         </div>
-        <!-- <div id="tykajacyZegar"></div> -->
-        <!-- <div id="aktualnaData">19 dni i 19:22:22</div> -->
-        <div id="doSwiatPozostalo"></div>
+        <div id="autor"></div>
       </div>
-      <div id="autor"></div>
-    </div>
     </div>
   </body>
 </html>

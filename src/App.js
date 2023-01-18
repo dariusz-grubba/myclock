@@ -13,9 +13,9 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
 
   const nowaData = new Date();
   var wyswietlDate = nowaData.toLocaleDateString('pl-PL');
-  let wyswietl_dzienTygodnia = ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'][new Date().getDay()];
+  let wyswietl_dzienTygodnia = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
-  document.getElementById('tytul').innerHTML = ("SZKOLNY<br>ZEGAREK");
+  document.getElementById('tytul').innerHTML = ("MyClock");
   document.getElementById('autor').innerHTML = ("Dariusz Grubba");
   document.getElementById('aktualnaData').innerHTML = (wyswietl_dzienTygodnia + ", " + wyswietlDate);
   var Teraz1 = nowaData.toLocaleTimeString('pl-PL');
@@ -28,11 +28,11 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
   aktualnaGodzina = aktualnaGodzina.slice(0, 5);
 
   if (aktualnaGodzina.startsWith("0") && aktualnaGodzina.startsWith("0")) {
-    aktualnaGodzina = aktualnaGodzina.slice(1); 
+    aktualnaGodzina = aktualnaGodzina.slice(1);
   }
   if (Teraz1.startsWith("0") && Teraz2.startsWith("0")) {
-    Teraz1 = Teraz1.slice(1, 2); 
-    Teraz2 = Teraz2.slice(3, 5); 
+    Teraz1 = Teraz1.slice(1, 2);
+    Teraz2 = Teraz2.slice(3, 5);
   } else {
     Teraz1 = Teraz1.slice(0, 2);
     Teraz2 = Teraz2.slice(3, 5);
@@ -48,7 +48,7 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
   }
   function odliczajDoDzwonka() {
     var now = new Date();
-    if (now > start) { 
+    if (now > start) {
       start.setDate(start.getDate() + 1);
     }
     var remain = ((start - now) / 1000);
@@ -65,7 +65,7 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
       document.location.reload();
     }
     if (((hh + ":" + mm + ":" + ss) < "12:40:00") && (((hh + ":" + mm + ":" + ss) > "00:46:00"))) {
-      document.getElementById('wyswietlLekcje').innerHTML = "(Koniec lekcji)";
+      document.getElementById('wyswietlLekcje').innerHTML = "(Free time)";
     }
   }
   document.addEventListener('DOMContentLoaded', odliczajDoDzwonka);

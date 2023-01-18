@@ -133,6 +133,6 @@ export function nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wto
     }
   }
   if (document.getElementById('wyswietlLekcje').innerHTML === "") {
-    document.getElementById('wyswietlLekcje').innerHTML = "(Koniec lekcji)";
+    document.getElementById('wyswietlLekcje').innerHTML = "(Free time)";
   }
 }

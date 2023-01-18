@@ -5,7 +5,7 @@ html,
   padding: 0;
   margin: 0;
   font-size: 18px;
-  background-color: #000000;
+  background-color: #171717;
   color: black;
 }
 
@@ -15,7 +15,7 @@ html,
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: all 0.8s ease-in-out;
+  /* transition: all 0.8s ease-in-out; */
 }
 .App {
   text-align: center;
@@ -34,7 +34,7 @@ html,
   font-size: 55px;
   color: white;
   margin: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-top: 20px;
 }
 #tytul {
@@ -50,10 +50,9 @@ html,
 }
 #tykajacyZegar {
   font-size: 55px;
-  margin-top: 60px;
+  margin-top: 15px;
   margin-bottom: 60px;
   text-align: center;
-  margin-top: 20px;
   color: white;
 }
 #wrap1 {
@@ -62,53 +61,76 @@ html,
   margin-right: 10%;
   border-width: 3px;
   border-style: solid;
-  border-color: #1c1c1c;
+  border-color: #202020;
   border-radius: 15px;
-  background-color: #1c1c1c;
+  background-color: #202020;
 }
 #wrap2 {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
   border-style: solid;
-  border-color: #1c1c1c;
+  border-color: #202020;
   border-radius: 15px;
-  background-color: #1c1c1c;
+  background-color: #202020;
   /* box-shadow: 0 0 5px 2px #cf3a89,
               0 0 5px 2px #ff1493,
               0 0 30px 2px #ff1493,
               0 0 30px 2px #ff1493; */
 }
 #wrap3 {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
   border-style: solid;
-  border-color: #1c1c1c;
+  border-color: #202020;
   border-radius: 15px;
-  background-color: #1c1c1c;
+  background-color: #202020;
 }
 #wrap4 {
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 10%;
   margin-right: 10%;
   border-width: 3px;
   border-style: solid;
-  border-color: #1c1c1c;
+  border-color: #202020;
   border-radius: 15px;
-  background-color: #1c1c1c;
-    /* box-shadow: 0 0 5px 2px #ffffff,
+  background-color: #202020;
+  /* box-shadow: 0 0 5px 2px #ffffff,
               0 0 5px 2px #ffffff,
               0 0 10px 2px #ffffff,
               0 0 20px 2px #ffffff; */
+}
+#wrap5 {
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #202020;
+  border-radius: 15px;
+  background-color: #202020;
+  /* box-shadow: 0 0 5px 2px #ffffff,
+              0 0 5px 2px #ffffff,
+              0 0 10px 2px #ffffff,
+              0 0 20px 2px #ffffff; */
+}
+#scheduleButton {
+  text-align: center;
+  font-size: 22.5px;
+  color: white;
+  margin: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 @media (min-width: 500px) {
   #wrap1,
   #wrap2,
   #wrap3,
-  #wrap4 {
+  #wrap4,
+  #wrap5 {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -117,7 +139,8 @@ html,
   #wrap1,
   #wrap2,
   #wrap3,
-  #wrap4 {
+  #wrap4,
+  #wrap5 {
     margin-left: 30%;
     margin-right: 30%;
   }
@@ -126,7 +149,8 @@ html,
   #wrap1,
   #wrap2,
   #wrap3,
-  #wrap4 {
+  #wrap4,
+  #wrap5 {
     margin-left: 30%;
     margin-right: 30%;
   }
@@ -135,7 +159,8 @@ html,
   #wrap1,
   #wrap2,
   #wrap3,
-  #wrap4 {
+  #wrap4,
+  #wrap5 {
     margin-left: 38%;
     margin-right: 38%;
   }
@@ -154,7 +179,7 @@ html,
   margin-bottom: 15px;
   margin-top: 25px;
 }
-#doSwiatPozostalo{
+#doSwiatPozostalo {
   text-align: center;
   font-size: 25px;
   margin: 30px;
@@ -177,9 +202,9 @@ html,
   margin-bottom: -15px;
 }
 #autor {
-  color: white;
+  color: rgb(176, 176, 176);
   font-size: 25px;
   margin-top: 20px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 20px;
   text-align: center;
 }
