@@ -23,7 +23,7 @@ function odliczajDoSwiat() {
 	} else if (dni === 0) {
 		document.getElementById('doSwiatPozostalo').innerHTML = (godziny + ":" + minuty + ":" + sekundy);
 	} else {
-		// wyswietlSekcjeSwieta.style.display = "none";
+		wyswietlSekcjeSwieta.style.display = "none";
 	}
 }
 
