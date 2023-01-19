@@ -45,7 +45,6 @@ a {
   text-align: center;
   font-size: 55px;
   margin-top: 20px;
-  color: white;
   background: -webkit-linear-gradient(#ad1deb, #5b60ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,8 +70,8 @@ a {
   background: linear-gradient(
     to bottom,
     #262626 0%,
-    #262626 30%,
-    #202020 30%,
+    #262626 43px,
+    #202020 43px,
     #202020 100%
   );
 }
@@ -88,8 +87,8 @@ a {
   background: linear-gradient(
     to bottom,
     #262626 0%,
-    #262626 36%,
-    #202020 36%,
+    #262626 43px,
+    #202020 43px,
     #202020 100%
   );
   /* box-shadow: 0 0 5px 2px #cf3a89,
@@ -126,8 +125,8 @@ a {
   background: linear-gradient(
     to bottom,
     #262626 0%,
-    #262626 46%,
-    #202020 46%,
+    #262626 43px,
+    #202020 43px,
     #202020 100%
   );
   /* box-shadow: 0 0 5px 2px #ffffff,
