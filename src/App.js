@@ -16,7 +16,7 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
   let wyswietl_dzienTygodnia = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
   document.getElementById('tytul').innerHTML = ("MyClock");
-  document.getElementById('autor').innerHTML = ("Dariusz Grubba");
+  document.getElementById('autor').innerHTML = ("<a href='https://github.com/dariusz-grubba/myclock' target='_blank'>" + "<i class='fa-brands fa-github fa-sm'></i>" + "&nbsp" + "Dariusz Grubba" + "</a>");
   document.getElementById('aktualnaData').innerHTML = (wyswietl_dzienTygodnia + ", " + wyswietlDate);
   var Teraz1 = nowaData.toLocaleTimeString('pl-PL');
   var Teraz2 = nowaData.toLocaleTimeString('pl-PL');
