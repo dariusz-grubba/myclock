@@ -12,7 +12,7 @@
 
 Add your PWA’s icon to a home screen
 
-- ###iOS
+###- iOS
 
 1. Open the browser by tapping on the Safari icon.
 2. Navigate to the PWA url.
