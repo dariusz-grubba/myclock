@@ -120,4 +120,4 @@ Builds the application for production in the `build` folder.
 
 `$  npm run build`
 
-You can find more information about it here: [codeCompilation](https://facebook.github.io/create-react-app/docs/deployment)
+You can find more information about it here: [https://facebook.github.io/create-react-app/docs/deploymen](https://facebook.github.io/create-react-app/docs/deployment)
