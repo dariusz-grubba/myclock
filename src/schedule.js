@@ -16,7 +16,6 @@ export function schedule() {
   ];
 
   const monday = [];
-  monday[0] = "";
   monday[1] = "";
   monday[2] = "";
   monday[3] = "";
