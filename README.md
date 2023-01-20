@@ -10,7 +10,7 @@
 
 # [Preview link](https://myclock-github.vercel.app/ "Preview link")
 
-Add your PWA’s icon to a home screen
+Add the PWA’s icon to a home screen
 
 - iOS
 
