@@ -41,7 +41,7 @@ a {
   margin-bottom: 7px;
   margin-top: 23px;
 }
-#tytul {
+#title {
   text-align: center;
   font-size: 55px;
   margin-top: 20px;
@@ -51,7 +51,7 @@ a {
   font-family: "Poppins", sans-serif;
   line-height: 1.1em;
 }
-#tykajacyZegar {
+#tickingClock {
   font-size: 55px;
   margin-top: 23px;
   margin-bottom: 60px;
@@ -196,13 +196,7 @@ a {
     margin-right: 38%;
   }
 }
-#podTytul {
-  text-align: center;
-  font-size: 25px;
-  margin-top: 20px;
-  color: white;
-}
-#wyswietlLekcje {
+#showLesson {
   text-align: center;
   font-size: 25px;
   margin: 30px;
@@ -210,7 +204,7 @@ a {
   margin-bottom: 13px;
   margin-top: 33px;
 }
-#doSwiatPozostalo {
+#timeTillHolidays {
   text-align: center;
   font-size: 25px;
   margin: 30px;
@@ -218,14 +212,14 @@ a {
   margin-bottom: 13px;
   margin-top: 33px;
 }
-#aktualnaData {
+#currentDate {
   text-align: center;
   font-size: 20px;
   color: white;
   margin-top: -65px;
   margin-bottom: 10px;
 }
-#ikonkaZegarka {
+#iconSymbol {
   color: rgb(196, 196, 196);
   font-size: 18px;
   font-weight: 600;
@@ -233,7 +227,7 @@ a {
   margin-top: 10px;
   margin-bottom: -15px;
 }
-#autor {
+#author {
   color: rgb(176, 176, 176);
   font-size: 25px;
   margin-top: 20px;

@@ -1,52 +1,52 @@
 import React from "react";
 import "./App.css";
-import Zegarek from "./components/Zegar";
-import { nastepnaLekcja } from "./components/nastepnaLekcja";
+import Clock from "./components/clock";
+import { nextLesson } from "./components/nextLesson";
 import { wszystkieDzwonki } from "./package-react";
-import { planLekcji } from "./planLekcji";
-import { doSwiat } from "./components/doSwiat";
-import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
+import { schedule } from "./schedule";
+import { nextBreak } from "./components/nextBreak";
+import { currentLesson } from "./components/currentLesson";
 
 (function () {
   var start = new Date();
-  const { dzwonki, poniedzialek, wtorek, sroda, czwartek, piatek, sobota } = planLekcji();
+  const { schoolBell, monday, tuesday, wednesday, thursday, friday, saturday } = schedule();
 
-  const nowaData = new Date();
-  var wyswietlDate = nowaData.toLocaleDateString('pl-PL');
-  let wyswietl_dzienTygodnia = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
+  const newDate = new Date();
+  var wyswietlDate = newDate.toLocaleDateString('pl-PL');
+  let displayWeekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
-  document.getElementById('tytul').innerHTML = ("MyClock");
-  document.getElementById('autor').innerHTML = ("<a href='https://github.com/dariusz-grubba/myclock' target='_blank'>" + "<i class='fa-brands fa-github fa-sm'></i>" + "&nbsp" + "Dariusz Grubba" + "</a>");
-  document.getElementById('aktualnaData').innerHTML = (wyswietl_dzienTygodnia + ", " + wyswietlDate);
-  var Teraz1 = nowaData.toLocaleTimeString('pl-PL');
-  var Teraz2 = nowaData.toLocaleTimeString('pl-PL');
+  document.getElementById('title').innerHTML = ("MyClock");
+  document.getElementById('author').innerHTML = ("<a href='https://github.com/dariusz-grubba/myclock' target='_blank'>" + "<i class='fa-brands fa-github fa-sm'></i>" + "&nbsp" + "Dariusz Grubba" + "</a>");
+  document.getElementById('currentDate').innerHTML = (displayWeekday + ", " + wyswietlDate);
+  var now1 = newDate.toLocaleTimeString('pl-PL');
+  var now2 = newDate.toLocaleTimeString('pl-PL');
 
-  Teraz1 = Teraz1.slice(0, 5);
-  Teraz2 = Teraz2.slice(0, 5);
+  now1 = now1.slice(0, 5);
+  now2 = now2.slice(0, 5);
 
-  var aktualnaGodzina = nowaData.toLocaleTimeString('pl-PL');
-  aktualnaGodzina = aktualnaGodzina.slice(0, 5);
+  var currentTime = newDate.toLocaleTimeString('pl-PL');
+  currentTime = currentTime.slice(0, 5);
 
-  if (aktualnaGodzina.startsWith("0") && aktualnaGodzina.startsWith("0")) {
-    aktualnaGodzina = aktualnaGodzina.slice(1);
+  if (currentTime.startsWith("0") && currentTime.startsWith("0")) {
+    currentTime = currentTime.slice(1);
   }
-  if (Teraz1.startsWith("0") && Teraz2.startsWith("0")) {
-    Teraz1 = Teraz1.slice(1, 2);
-    Teraz2 = Teraz2.slice(3, 5);
+  if (now1.startsWith("0") && now2.startsWith("0")) {
+    now1 = now1.slice(1, 2);
+    now2 = now2.slice(3, 5);
   } else {
-    Teraz1 = Teraz1.slice(0, 2);
-    Teraz2 = Teraz2.slice(3, 5);
+    now1 = now1.slice(0, 2);
+    now2 = now2.slice(3, 5);
   }
-  wszystkieDzwonki(Teraz1, dzwonki, Teraz2, start);
+  wszystkieDzwonki(now1, schoolBell, now2, start);
   let dzienTygodnia = new Date();
 
-  const godzinaLekcyjna = wypiszGodzineLekcyjna(aktualnaGodzina, dzwonki);
-  nastepnaLekcja(godzinaLekcyjna, dzienTygodnia, poniedzialek, wtorek, sroda, czwartek, piatek, sobota);
+  const lessonNumber = currentLesson(currentTime, schoolBell);
+  nextLesson(lessonNumber, dzienTygodnia, monday, tuesday, wednesday, thursday, friday, saturday);
 
   function pad(num) {
     return ("0" + parseInt(num)).substr(-2);
   }
-  function odliczajDoDzwonka() {
+  function coutdownToRing() {
     var now = new Date();
     if (now > start) {
       start.setDate(start.getDate() + 1);
@@ -57,7 +57,7 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
     var ss = pad(remain % 60);
     document.getElementById('time').innerHTML =
       hh + ":" + mm + ":" + ss;
-    setTimeout(odliczajDoDzwonka, 1000);
+    setTimeout(coutdownToRing, 1000);
     if (((hh + ":" + mm + ":" + ss) < "00:00:01")) {
       document.location.reload();
     }
@@ -65,15 +65,15 @@ import { wypiszGodzineLekcyjna } from "./components/wypiszGodzineLekcyjna";
       document.location.reload();
     }
     if (((hh + ":" + mm + ":" + ss) < "12:40:00") && (((hh + ":" + mm + ":" + ss) > "00:46:00"))) {
-      document.getElementById('wyswietlLekcje').innerHTML = "(Free time)";
+      document.getElementById('showLesson').innerHTML = "(Free time)";
     }
   }
-  document.addEventListener('DOMContentLoaded', odliczajDoDzwonka);
+  document.addEventListener('DOMContentLoaded', coutdownToRing);
 })();
 function App() {
   return (
     <><div className="App">
-      <Zegarek></Zegarek>
+      <Clock></Clock>
     </div>
     </>
 

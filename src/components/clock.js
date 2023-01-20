@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Zegarek() {
+function Clock() {
     const [clockState, setClockState] = useState();
 
     useEffect(() => {
@@ -11,7 +11,7 @@ function Zegarek() {
 
     }, []);
 
-    return document.getElementById('tykajacyZegar').innerHTML = clockState
+    return document.getElementById('tickingClock').innerHTML = clockState
 }
 
-export default Zegarek;
+export default Clock;

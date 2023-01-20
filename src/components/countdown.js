@@ -1,9 +1,9 @@
 import React from 'react'
 
-function DoDzwonkaPozostalo({ hoursMinSecs }) {
+function TimeTillTheBell({ hoursMinSecs }) {
     const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
     const [[hrs, mins, secs], setTime] = React.useState([hours, minutes, seconds]);
-    const odliczajDoDzwonka = () => {
+    const countDownToRing = () => {
         if (hrs === 0 && mins === 0 && secs === 0)
             reset();
         else if (mins === 0 && secs === 0) {
@@ -16,7 +16,7 @@ function DoDzwonkaPozostalo({ hoursMinSecs }) {
     };
     const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
     React.useEffect(() => {
-        const timerId = setInterval(() => odliczajDoDzwonka(), 1000);
+        const timerId = setInterval(() => countDownToRing(), 1000);
         return () => clearInterval(timerId);
     });
     return (
@@ -28,4 +28,4 @@ function DoDzwonkaPozostalo({ hoursMinSecs }) {
     );
 }
 
-export default DoDzwonkaPozostalo;
+export default TimeTillTheBell;
