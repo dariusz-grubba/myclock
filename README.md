@@ -32,7 +32,7 @@ Add your PWA’s icon to a home screen
 
 The project was created using the **React.js** framework. This made it possible to build a dynamic, responsive interface with individual modular components behind it.
 
-![photos](https://github.com/dariusz-grubba/myclock/blob/4e725a158b446462f530cf6842cecdeacf2b74e2/public/phones.png)
+![photos](https://github.com/dariusz-grubba/myclock/blob/6ec46c471020042a43c48f9522fda49ceadd563c/public/phones.png)
 
 # Uploading your own schedule
 
