@@ -4,7 +4,7 @@
 
 - Displaying the current time and date;
 - Countdown to the next break;
-- Passing the next lesson from the timetable;;
+- Passing the next lesson from the timetable;
 - Informing about the end of the lesson;
 - Countdown to the next school break (e.g., spring break)
 
