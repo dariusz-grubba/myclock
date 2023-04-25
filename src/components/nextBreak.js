@@ -1,5 +1,5 @@
 function countdownHolidays() {
-	var endingTime = new Date("6 April 2023 00:00:00 GMT+01:00");
+	var endingTime = new Date("28 April 2023 15:50:00 GMT+01:00");
 	endingTime = (Date.parse(endingTime) / 1000);
 	var displayCountdown = document.getElementById("wrap4");
 	var now = new Date();
